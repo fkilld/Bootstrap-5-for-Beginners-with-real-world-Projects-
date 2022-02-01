@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Breakpoints & Containers</title>
+</head>
+<style>
+    @media (min-width: 575.98px) {
+        .breackpoints {
+            background-color: #333 !important;
+        }
+
+        .X-Small {
+            color: white;
+        }
+
+        .Breakpoints-thead {
+            color: white;
+        }
+    }
+
+    @media (min-width: 767.98px) {
+        .X-Small {
+            color: black;
+        }
+
+        .Small {
+            color: white;
+        }
+
+        .Breakpoints-thead {
+            color: white;
+        }
+    }
+
+    @media (min-width: 991.98px) {
+        .X-Small {
+            color: black;
+        }
+
+        .Small {
+            color: black;
+        }
+
+        .Medium {
+            color: white;
+        }
+
+        .Breakpoints-thead {
+            color: white;
+        }
+    }
+
+    @media (min-width: 1199.98px) {
+        .Medium {
+            color: black;
+        }
+
+        .Extra-Large {
+            color: white;
+        }
+
+        .Breakpoints-thead {
+            color: white;
+        }
+    }
+
+    @media (min-width: 1399.98px) {
+        .Extra-Large {
+            color: black;
+        }
+
+        .Extra-extra-Large {
+            color: white;
+        }
+
+        .Breakpoints-thead {
+            color: white;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1 class="text-center display-1">
+            <strong>Bootstrap Breakpoints & Containers</strong>
+        </h1>
+    </header>
+
+    <div class="container-fluid">
+        <!-- Breakpoints  -->
+
+        <!--Breakpoints values -->
+
+        <h2 class="display-4 mt-5"> Breakpoints values</h2>
+
+        <div class="card p-3 bg-light breackpoints">
+            <table class="table">
+                <thead class="Breakpoints-thead">
+                    <tr>
+                        <th scope="col">Breakpoint</th>
+                        <th scope="col">Class infix</th>
+                        <th scope="col">Dimensions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="X-Small">
+                        <td>X-Small</td>
+                        <td>None</td>
+                        <td>
+                            < 576px</td>
+                    </tr>
+                    <tr class="Small">
+                        <td>Small</td>
+                        <td>sm</td>
+                        <td>≥ 576px</td>
+                    </tr>
+                    <tr class="Medium">
+                        <td>Medium</td>
+                        <td>md</td>
+                        <td>≥ 768px</td>
+                    </tr>
+                    <tr class="Large">
+                        <td>Large</td>
+                        <td>lg</td>
+                        <td>≥ 992px</td>
+                    </tr>
+                    <tr class="Extra-Large">
+                        <td>Extra large</td>
+                        <td>xl</td>
+                        <td>≥ 1200px</td>
+                    </tr>
+                    <tr class="Extra-extra-Large">
+                        <td>Extra extra large</td>
+                        <td>xxl</td>
+                        <td>≥ 1400px</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Containers -->
+
+        <div class="container-xl">
+            <h2 class="display-4 mt-5 text-center">Containers</h2>
+            <h4 class="display-6 mt-5">
+                The fundamental building block of Bootstrap
+            </h4>
+        </div>
+
+        <div class="container-xl">
+            <h2 class="display-4 mt-5"> Containers types</h2>
+            <div class="card p-3 bg-light">
+                <ul>
+                    <li>
+                        <strong>.container</strong>, which sets a max-width at each
+                        responsive breakpoint
+                    </li>
+                    <li>
+                        <strong>.container-fluid</strong>, which is width: 100% at all
+                        breakpoints
+                    </li>
+                    <li>
+                        <strong>.container-{breakpoint}</strong>, which is width: 100%
+                        until the specified breakpoint
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Containers values -->
+
+        <h2 class="display-4 mt-5"> Containers values</h2>
+        <!-- container-sm -->
+        <div class="bg-danger">100% wide until small breakpoint</div>
+        <!-- container-md -->
+        <div class="bg-info">100% wide until medium breakpoint</div>
+        <!-- container-lg  -->
+        <div class="bg-success">100% wide until large breakpoint</div>
+        <!-- container-xl -->
+        <div class="bg-warning">100% wide until extra large breakpoint</div>
+        <!-- container-xxl -->
+        <div class="bg-primary">100% wide until extra extra large breakpoint</div>
+
+        <!-- Container End -->
+    </div>
+
+
+</body>
+
+</html>

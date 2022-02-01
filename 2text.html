@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Text Basics</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center display-1">
+            <strong>Bootstrap Text Basics</strong>
+        </h1>
+    </header>
+    <div class="container">
+        <!--  Inline text elements -->
+
+        <h2 class="display-4 mt-5"> Inline text elements</h2>
+
+        <div class="card p-3 bg-light">
+            <!-- <mark>highlight</mark> -->
+            <p>You can use the mark tag to highlight text.</p>
+            <!-- <del> </del>-->
+            <p>This line of text is meant to be treated as deleted text.</p>
+            <!-- <s> </s>-->
+            <p>This line of text is meant to be treated as no longer accurate.</p>
+            <!-- <ins> </ins>-->
+            <p>
+                This line of text is meant to be treated as an addition to the
+                document.
+            </p>
+            <!-- <u> </u>-->
+            <p>This line of text will render as underlined.</p>
+            <!-- <small></small> -->
+            <p>This line of text is meant to be treated as fine print.</p>
+            <!-- <strong> </strong>-->
+            <p>This line rendered as bold text.</p>
+            <!-- <em></em> -->
+            <p>This line rendered as italicized text.</p>
+        </div>
+
+        <!--    Text decoration -->
+
+        <h2 class="display-4 mt-5"> Text decoration</h2>
+
+        <div class="card p-3 bg-light">
+            <!-- class="text-decoration-underline" -->
+            <p>This text has a line underneath it.</p>
+            <!-- class="text-decoration-line-through" -->
+            <p>This text has a line going through it.</p>
+            <!-- class="text-decoration-none" -->
+            <a href="#">This link has its text decoration removed</a>
+        </div>
+
+        <!--   Text alignment -->
+
+        <h2 class="display-4 mt-5"> Text alignment</h2>
+
+        <card class="card p-3 bg-light">
+            <!-- class="text-start" -->
+            <p>Start aligned text on all viewport sizes.</p>
+            <!-- class="text-center" -->
+            <p>Center aligned text on all viewport sizes.</p>
+            <!-- class="text-end" -->
+            <p>End aligned text on all viewport sizes.</p>
+            <!-- class="text-sm-start" -->
+            <p>Start aligned text on viewport sized SM (small) or wider.</p>
+            <!-- class="text-md-end" -->
+            <p>Start aligned text on viewport sized MD (medium) or wider.</p>
+            <!-- class="text-lg-center" -->
+            <p>Start aligned text on viewport sized LG (large) or wider.</p>
+            <!-- class="text-xl-center" -->
+            <p>Start aligned text on viewport sized XL (extra-large) or wider.</p>
+        </card>
+
+        <!--   Text wrapping and overflow -->
+
+        <h2 class="display-4 mt-5">
+            Text wrapping and overflow
+        </h2>
+        <card class="card p-3 bg-light">
+            <!-- text-wrap -->
+            <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                This text should wrap.
+            </div>
+            <!-- text-nowrap -->
+            <div class="text-nowrap bg-danger" style="width: 8rem;">
+                This text should overflow the parent.
+            </div>
+        </card>
+
+        <!--   Text transform-->
+
+        <h2 class="display-4 mt-5"> Text transform</h2>
+
+        <card class="card p-3 bg-light">
+            <!-- class="text-lowercase" -->
+            <p>Lowercased text.</p>
+            <!-- class="text-uppercase" -->
+            <p>Uppercased text.</p>
+            <!-- class="text-capitalize"  -->
+            <p>CapiTaliZed text.</p>
+        </card>
+
+        <!--   Font weight and italics-->
+
+        <h2 class="display-4 mt-5"> Font weight and italics</h2>
+
+        <card class="card p-3 bg-light">
+            <!-- class="fw-bold" -->
+            <p>Bold text.</p>
+            <!--  class="fw-bolder" -->
+            <p>Bolder weight text (relative to the parent element).</p>
+            <!-- class="fw-normal" -->
+            <p>Normal weight text.</p>
+            <!-- class="fw-light" -->
+            <p>Light weight text.</p>
+            <!-- class="fw-lighter" -->
+            <p>Lighter weight text (relative to the parent element).</p>
+            <!-- class="fst-italic" -->
+            <p>Italic text.</p>
+            <!-- class="fst-normal" -->
+            <p>Text with normal font style</p>
+        </card>
+
+        <!--   Font size-->
+
+        <h2 class="display-4 mt-5"> Font size</h2>
+
+        <card class="card p-3 bg-light">
+            <!-- fs-1 ...fs-6-->
+            <p class="">.fs-1 text</p>
+            <p class="">.fs-2 text</p>
+            <p class="">.fs-3 text</p>
+            <p class="">.fs-4 text</p>
+            <p class="">.fs-5 text</p>
+            <p class="">.fs-6 text</p>
+        </card>
+
+        <!--   Line height -->
+
+        <h2 class="display-4 mt-5"> Line height</h2>
+
+        <card class="card p-3 bg-light">
+            <!-- lh-1 -->
+            <p class="">
+                This is a long paragraph written to show how the line-height of an
+                element is affected by our utilities. Classes are applied to the
+                element itself or sometimes the parent element. These classes can be
+                customized as needed with our utility API.
+            </p>
+            <!-- lh-sm -->
+            <p class="">
+                This is a long paragraph written to show how the line-height of an
+                element is affected by our utilities. Classes are applied to the
+                element itself or sometimes the parent element. These classes can be
+                customized as needed with our utility API.
+            </p>
+            <!-- lh-base -->
+            <p class="">
+                This is a long paragraph written to show how the line-height of an
+                element is affected by our utilities. Classes are applied to the
+                element itself or sometimes the parent element. These classes can be
+                customized as needed with our utility API.
+            </p>
+            <!-- lh-lg -->
+            <p class="">
+                This is a long paragraph written to show how the line-height of an
+                element is affected by our utilities. Classes are applied to the
+                element itself or sometimes the parent element. These classes can be
+                customized as needed with our utility API.
+            </p>
+        </card>
+    </div>
+
+
+</body>
+
+</html>

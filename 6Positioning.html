@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Position</title>
+</head>
+<style>
+    .box {
+        width: 30px;
+        height: 30px;
+        background-color: black;
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+        <!-- Position  -->
+
+        <!--Position values -->
+
+        <h2 class="display-4 mt-5"> Position values</h2>
+
+        <div class="card p-3 bg-light">
+            <!-- position-static -->
+            <div class="text-danger">static</div>
+            <!-- position-relative -->
+            <div class="text-primary">relative</div>
+            <!-- position-absolute -->
+            <div class="top-0 end-0 text-warning">absolute</div>
+            <!-- position-fixed -->
+            <div class="text-info">fixed</div>
+            <!-- position-sticky -->
+            <div class="">sticky</div>
+        </div>
+
+        <!-- Arrange elements -->
+
+        <h2 class="display-4 mt-5">Arrange elements</h2>
+
+        <div class="card p-3 bg-light" style="height: 300px">
+            <div class="position-relative bg-warning" style="height: 290px">
+                <!-- top-0 & start-0 -->
+                <div class="position-absolute box bg-danger"></div>
+                <!-- top-0 end-0 -->
+                <div class="position-absolute box bg-info"></div>
+                <!-- top-50 start-50 -->
+                <div class="position-absolute box bg-primary"></div>
+                <!-- bottom-50 end-50 -->
+                <div class="position-absolute box bg-secondary"></div>
+                <!--  bottom-0 start-0 -->
+                <div class="position-absolute box bg-success"></div>
+                <!-- bottom-0 end-0 -->
+                <div class="position-absolute box"></div>
+            </div>
+        </div>
+
+        <!--Center elements -->
+
+        <h2 class="display-4 mt-5">Center elements</h2>
+
+        <div class="card p-3 bg-light" style="height: 300px">
+            <div class="position-relative bg-warning" style="height: 290px">
+                <!-- top-0 start-0 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-0 start-50 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-0 start-100 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-50 start-0 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-50 start-50 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-50 start-100 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-100 start-0 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-100 start-50 translate-middle -->
+                <div class="position-absolute box"></div>
+                <!-- top-100 start-100 translate-middle -->
+                <div class="position-absolute box"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
